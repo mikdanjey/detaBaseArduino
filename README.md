@@ -1,7 +1,7 @@
-# Library For Interacting with a [Deta.sh](https://www.deta.sh/) Base Instance Using an Arduino-Based ESP32
+# Library For Interacting with a [Deta.sh](https://www.deta.sh/) Base Instance Using an Arduino-Based
 
 ## Introduction
-This library is abstracts away the networking aspect of interacting with a [Deta.sh Base Instance](https://docs.deta.sh/docs/home/#deta-base), a free online NoSQL data base. This library uses [Deta's provided HTTP API](https://docs.deta.sh/docs/base/http), and exposes all functions listed there. It is meant to be used on an ESP32 running the Arduino core provided by Espressif.
+This library is abstracts away the networking aspect of interacting with a [Deta.sh Base Instance](https://docs.deta.sh/docs/home/#deta-base), a free online NoSQL data base. This library uses [Deta's provided HTTP API](https://docs.deta.sh/docs/base/http), and exposes all functions listed there. It is meant to be used on an running the Arduino core provided by Espressif.
 
 #### Required items to use this library:
 * Deta Project ID
