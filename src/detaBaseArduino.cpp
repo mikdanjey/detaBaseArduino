@@ -7,6 +7,7 @@ DetaBaseObject::DetaBaseObject(WiFiClientSecure wifiObject, const char* detaID, 
   _detaBaseName = detaBaseName;
   _baseURI = (char *)malloc((strlen("/v1/") + strlen(detaID) + strlen("/") + strlen(detaBaseName) + 1 ) * sizeof(char));
   _wifiObject = wifiObject;
+  _wifiObject.setCACert(_detaRootCa);
   _host = "database.deta.sh";
   strcpy(_baseURI, "/v1/");
   strncat(_baseURI, detaID, strlen(detaID));
@@ -20,6 +21,7 @@ DetaBaseObject::DetaBaseObject(WiFiClientSecure wifiObject, const char* detaID, 
   _detaBaseName = detaBaseName;
   _baseURI = (char *)malloc((strlen("/v1/") + strlen(detaID) + strlen("/") + strlen(detaBaseName) + 1 ) * sizeof(char));
   _wifiObject = wifiObject;
+  _wifiObject.setCACert(_detaRootCa);
   _host = "database.deta.sh";
   strcpy(_baseURI, "/v1/");
   strncat(_baseURI, detaID, strlen(detaID));
